@@ -1,0 +1,14 @@
+{% extends "joueur/base.html" %}
+
+{% load static %}
+
+{% block welcome %}
+
+  <div class="col-lg-12" id="fiche">
+    {{ user.get_username }}
+    <p>coucou</p>
+    <img src="{% static images/old-paper-background.jpg}" alt="My image"/>
+  <br>
+  </div>
+
+{% endblock %}
